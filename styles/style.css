@@ -247,3 +247,223 @@ body{
   margin-top:20px;
 }
 
+
+/* ================= ABOUT ================= */
+
+.about-section{
+  padding:80px 70px;
+}
+
+.about-container{
+  display:flex;
+  align-items:center;
+  gap:60px;
+}
+
+.about-image img{
+  width:320px;
+}
+
+.about-content{
+  color:#555;
+  line-height:1.8;
+}
+
+/* ================= IMPACT ================= */
+
+.impact-section{
+  background:#d8f0dc;
+  padding:80px 70px;
+}
+
+.impact-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.impact-card{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.impact-card h3{
+  color:#13823b;
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+/* ================= FORM ================= */
+
+.form-section{
+  background:#0d6b2f;
+  color:white;
+
+  text-align:center;
+
+  padding:80px 20px;
+}
+
+.tree-form{
+  width:400px;
+  margin:30px auto;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.tree-form input{
+  padding:14px;
+  border:none;
+  border-radius:6px;
+}
+
+.tree-form button{
+  background:#f5c518;
+  border:none;
+  padding:14px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#085022;
+  color:white;
+  text-align:center;
+  padding:18px;
+}
+
+/* ================= MODAL ================= */
+
+/* ================= MODAL DESIGN ================= */
+
+#plant-modal{
+  border:none;
+  border-radius:16px;
+  width:550px;
+  padding:25px;
+  background:white;
+}
+
+#plant-modal::backdrop{
+  background:rgba(0,0,0,0.5);
+}
+
+.modal-title{
+  background:#0d6b2f;
+  color:white;
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:6px;
+  margin-bottom:15px;
+}
+
+.modal-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+.modal-info h4{
+  margin-bottom:10px;
+}
+
+.modal-info h3{
+  color:#13823b;
+  margin-bottom:15px;
+}
+
+.modal-info p{
+  line-height:1.7;
+  color:#555;
+}
+
+.close-btn{
+  margin-top:20px;
+  background:#13823b;
+  color:white;
+  border:none;
+  padding:10px 22px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.modal-btn-box{
+  display:flex;
+  justify-content:flex-end;
+}
+
+/* ================= SPINNER ================= */
+
+.spinner{
+  text-align:center;
+  font-size:24px;
+}
+
+.hidden{
+  display:none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width:992px){
+
+  .tree-layout{
+    grid-template-columns:1fr;
+  }
+
+  .plants-container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .nav-menu{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-content h1{
+    font-size:32px;
+  }
+
+  .plants-container{
+    grid-template-columns:1fr;
+  }
+
+  .impact-cards{
+    grid-template-columns:1fr;
+  }
+
+  .tree-form{
+    width:100%;
+  }
+
+  .leaf-left,
+  .leaf-right{
+    width:140px;
+  }
+
+}
+
+
